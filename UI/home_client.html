@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loan-calculator</title>
+	<link rel="stylesheet" href="Css/style.css">
+</head>
+<body onload="checkdate()">
+  <div class="global-header mod-trello-blue">
+     <div class="logo">Quick Credit Solution</div>
+  
+  <div class="buttons-wrapper">
+    <a href="index.html" class="buttonmenue">Home</a>
+    <a href="#" class="buttonmenue">About us</a>
+    <a href="#" class="buttonmenue">FAQ</a>
+  </div>
+
+  <div id="formContent2">
+	<form name="loandata">
+    <table>
+      <tr>
+        <td>
+  <table>
+    <tr><td colspan="3"><b>Enter Loan Information:</b></td></tr>
+    <tr>
+      <td>1)</td>
+      <td>Amount of the loan:</td>
+      <td><input type="text" name="principal" size="12" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <td>2)</td>
+      <td>Annual percentage rate of interest:</td>
+      <td><input type="text" class="fadeIn second" name="interest" size="14" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr>
+      <td>3)</td>
+      <td>Repayment period in years:</td>
+      <td><input type="text" name="years" size="40" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr><td colspan="3">
+      <input type="button" value="Compute" onclick="calculate();">
+    </td></tr>
+    <tr><td colspan="3">
+      <b>Payment Information:</b>
+    </td></tr>
+    <tr>
+      <td>4)</td>
+      <td>Your monthly payment will be:</td>
+      <td><input type="text" name="payment" size="12"></td>
+    </tr>
+    <tr>
+      <td>5)</td>
+      <td>Your total payment will be:</td>
+      <td><input type="text" name="total" size="12"></td>
+    </tr>
+    <tr>
+      <td>6)</td>
+      <td>Your total interest payments will be:</td>
+      <td><input type="text" name="totalinterest" size="12"></td>
+    </tr>
+
+    </table>
+    </td>
+    <td>
+      
+          
+
+
+
+
+                        
+
+
+                    
+
+    </td>
+    </tr>
+  </table>
+</form>
+</div>
+<script language="JavaScript">
+function calculate() {
+    // Get the user's input from the form. Assume it is all valid.
+    // Convert interest from a percentage to a decimal, and convert from
+    // an annual rate to a monthly rate. Convert payment period in years
+    // to the number of monthly payments.
+    var principal = document.loandata.principal.value;
+    var interest = document.loandata.interest.value / 100 / 12;
+    var payments = document.loandata.years.value * 12;
+
+    // Now compute the monthly payment figure, using esoteric math.
+    var x = Math.pow(1 + interest, payments);
+    var monthly = (principal*x*interest)/(x-1);
+
+    // Check that the result is a finite number. If so, display the results.
+    if (!isNaN(monthly) && 
+        (monthly != Number.POSITIVE_INFINITY) &&
+        (monthly != Number.NEGATIVE_INFINITY)) {
+
+        document.loandata.payment.value = round(monthly);
+        document.loandata.total.value = round(monthly * payments);
+        document.loandata.totalinterest.value = 
+            round((monthly * payments) - principal);
+    }
+    // Otherwise, the user's input was probably invalid, so don't
+    // display anything.
+    else {
+        document.loandata.payment.value = "";
+        document.loandata.total.value = "";
+        document.loandata.totalinterest.value = "";
+    }
+}
+
+// This simple method rounds a number to two decimal places.
+function round(x) {
+  return Math.round(x*100)/100;
+}
+</script>
+</div>
+</body>
+</html>

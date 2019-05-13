@@ -1,0 +1,711 @@
+
+
+body {
+  font-family: "jaf-facitweb", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  display: inline-block;
+}
+
+.buttons-wrapper {
+  float: right;
+}
+
+.global-header{
+  background-color: #f8f9f9;
+  height: 5em;
+  left: 0;
+  padding: 1em .75em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.global-header.mod-trello-blue {
+    background: rgba(0, 121, 191, 0);
+    -webkit-transition: background 1s ease 0s;
+    transition: background 1s ease 0s
+}
+
+/* Colours */
+.background-blue {
+    background: #0079bf
+}
+.background-dark-bc {
+    background: #315989
+}
+.board-overlay.background-dark-bc {
+    background: rgba(37, 66, 109, 0.9)
+}
+.background-darkest-bc {
+    background: #273e5a
+}
+.background-orange-sun {
+    background: #ffab4a;
+    background: -webkit-linear-gradient(90deg, #f06e47, #ffab4a);
+    background: linear-gradient(0deg, #f06e47, #ffab4a)
+}
+.background-red {
+    background: #eb5a46
+}
+.background-light-purple {
+    background: #7b8fd1
+}
+.background-sky {
+    background: #29cce5
+}
+.background-business-blue {
+    background: #42548e
+}
+
+/* login and signup buttons */
+a.global-header-section-button {
+    background-color: #e2e4e6;
+    border-radius: .4em;
+    box-shadow: 0 2px 0 #cdd2d4;
+    color: #4d4d4d;
+    display: inline-block;
+    font-size: .8em;
+    line-height: 1.1em;
+    margin: 0 .25em;
+    padding: .7em 1.3em;
+    text-decoration: none;
+    vertical-align: top
+}
+
+a.global-header-section-button:visited {
+    color: #4d4d4d
+}
+
+a.global-header-section-button:focus,
+a.global-header-section-button:hover {
+    color: #4d4d4d;
+    background-color: #d6dadc;
+    box-shadow: 0 2px 0 #c4c9cc
+}
+
+a.global-header-section-button:active {
+    color: #4d4d4d;
+    background-color: #cdd2d4;
+    box-shadow: 0 2px 0 #b6bbbf
+}
+
+.global-header.mod-trello-blue {
+    background-color: #0079bf
+}
+.global-header.mod-business-blue {
+    background-color: #42548e
+}
+.global-header.mod-green {
+    background-color: #61bd4f
+}
+
+.global-header.mod-dark-background a.global-header-section-button {
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+    color: #fff
+}
+
+.global-header.mod-dark-background a.global-header-section-button:visited {
+    color: #fff
+}
+.global-header.mod-dark-background a.global-header-section-button:focus,
+.global-header.mod-dark-background a.global-header-section-button:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4)
+}
+.global-header.mod-dark-background a.global-header-section-button:active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5)
+}
+
+
+.global-header-section-button.mod-primary {
+    background: -webkit-linear-gradient(top, #61bd4f 0, #5aac44 100%);
+    background: linear-gradient(to bottom, #61bd4f 0, #5aac44 100%);
+    box-shadow: 0 2px 0 #3f6f21;
+    color: #fff;
+    font-weight: bold
+}
+
+.global-header-section-button.mod-primary:visited {
+    color: #fff
+}
+
+.global-header-section-button.mod-primary:focus,
+.global-header-section-button.mod-primary:hover {
+    color: #fff;
+    background: -webkit-linear-gradient(top, #5aac44 0, #519839 100%);
+    background: linear-gradient(to bottom, #5aac44 0, #519839 100%);
+    box-shadow: 0 2px 0 #3f6f21
+}
+
+.global-header-section-button.mod-primary:active {
+    color: #fff;
+    background: -webkit-linear-gradient(top, #519839 0, #49852e 100%);
+    background: linear-gradient(to bottom, #519839 0, #49852e 100%);
+    box-shadow: 0 2px 0 #3f6f21
+}
+
+@media only screen and (max-width: 750px) {
+    a.global-header-section-button {
+        padding-left: 1em;
+        padding-right: 1em
+    }
+}
+
+/*for user apply*/
+.content-apply-container{
+    background-color: azure;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 1115px;
+    height: 470px;
+    margin-top: -14px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: 2px 2px 7px 9px rgba(0,0,0,0.4);
+    overflow: hidden;
+    border-bottom: 0;
+}
+#contentapp-con.active{
+    width: 1268px;
+    margin-left: -155px;
+}
+
+
+
+
+
+/*for menue*/
+.buttonmenue {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.5);
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.content-apply-loan-label-3,.content-apply-loan-label-6,.content-apply-loan-label-9{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 353px;
+    margin-right: -21px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 635px;
+    height: 440px;
+    box-shadow: 1px -1px 3px 4px rgba(0,0,0,0.4);
+    overflow: hidden;
+    border-bottom: 0;
+}
+
+
+
+
+div.personal-form-layout,div.contact-form-layout,div.loan-form-layout{
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+
+.title-lbl-hdr{
+    font-size: 16px;
+    color: #555;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.select-title{
+    margin-bottom: 15px;
+    width: 538px;
+    height: 37px;
+    border-radius: 8px;
+    font-weight: normal;
+    color: #555;
+    background: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.select-emp{
+    margin-top: 11px;
+    margin-bottom: 15px;
+    width: 305px;
+    height: 37px;
+    border-radius: 8px;
+    font-weight: normal;
+    color: #555;
+    background: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fname-inp-tab,.home-inp-tab{
+    height: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    width: 48%;
+    margin-bottom: -19px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin-top: -3px;
+
+}
+.name-lbl-hdr, .title-lbl-hdr,.address-lbl-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: -3px;
+}
+
+.phone-lbl-hdr, .emp-lbl-hdr, .marital-lbl-hdr, .email-lbl-hdr, .zip-lbl-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 10px;
+}
+
+.reset-form-layout{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 17px;
+    font-size: 22px;
+    margin-left: 10px;
+    text-align: center;
+  
+}
+
+
+.lname-reg-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+
+.email-reg-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+
+.pass-reg-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+
+.pass-two-reg-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+
+.reg-tab{
+    margin-top: -9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    margin-bottom: -19px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+.fname-reg-hdr{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: -53px;
+    margin-left: 2px;
+}
+
+
+
+.date-lbl-tab{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 4px;
+}
+
+.upload-lbl-tab{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+    margin-top: 22px;
+}
+
+
+
+
+
+.fname-caption,.home-no-caption{
+    font-size: 16px;
+    color: #555;
+    /* text-transform: capitalize; */
+    display: flex;
+    margin-bottom: 26px;
+    margin-top: -23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ 
+.lname-inp-tab,.mobile-inp-tab{
+    height: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    width: 92%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-top: -6px;
+    margin-left: 22px;
+    box-sizing: border-box;
+
+} 
+
+
+/*------------------------------------*/
+
+
+
+
+/* for sign in */
+
+
+
+/* BASIC */
+
+html {
+  background-color: #56baed;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height:300%;
+  padding: 80px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 0px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+#formContent2 {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 0px;
+  width: 200%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 0px solid #dce8f1;
+  padding: 0px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  width: 75%;
+  border: 1px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fadeIn.fifth {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.fadeIn.sixth{
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.fadeIn.seventh{
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.6s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*teble test*/
+
+
+
+
+
+
