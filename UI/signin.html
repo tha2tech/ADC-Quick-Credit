@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>signin</title>
   <link rel="stylesheet" href="Css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js"> </script>
+    <script type="text/javascript" src="../Js/login.js"></script>>
+    
 </head>
 <body onload="checkdate()">
 
@@ -25,10 +27,10 @@
     
 
     <!-- Login Form -->
-    <form>
+    <form method="POST">
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
       <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+      <input type="button"  class="fadeIn fourth" value="Log In" onclick="loginClick()">
     </form>
 
     <!-- Remind Passowrd -->
