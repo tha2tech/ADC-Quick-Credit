@@ -1,1 +1,1 @@
-# ADC-Quick-Credit application is an online pratform where the client needs to sign in and request a short loan and after submitting his request admin check it and can approve it all reject it and send feet back to the client. 
+# ADC-Quick-Credit application  
