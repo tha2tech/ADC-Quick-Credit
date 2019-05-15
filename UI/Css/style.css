@@ -2,7 +2,7 @@
 
 body {
   font-family: "jaf-facitweb", "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px;
+  /*! font-size: 20px; */
 }
 
 .logo {
@@ -21,7 +21,7 @@ body {
   height: 5em;
   left: 0;
   padding: 1em .75em;
-  position: fixed;
+  position: ;
   right: 0;
   top: 0;
   z-index: 100;
@@ -118,7 +118,7 @@ a.global-header-section-button:active {
 .global-header.mod-dark-background a.global-header-section-button:focus,
 .global-header.mod-dark-background a.global-header-section-button:hover {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.30);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4)
 }
 .global-header.mod-dark-background a.global-header-section-button:active {
@@ -453,8 +453,8 @@ h2 {
   border-radius: 10px 10px 10px 10px;
   background: #fff;
   padding: 0px;
-  width: 90%;
-  max-width: 450px;
+  width: %;
+  max-width: 950px;
   position: relative;
   padding: 0px;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
@@ -541,20 +541,20 @@ input[type=text] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
-  padding: 10px 30px;
+  padding: 15px 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 3px;
-  width: 75%;
+  margin: px;
+  width: 0.5%;
   border: 1px solid #f6f6f6;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 555px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -572,14 +572,14 @@ input[type=text]:placeholder {
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
-.fadeInDown {
+./*fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
+}*/
 
 @-webkit-keyframes fadeInDown {
   0% {
@@ -616,7 +616,7 @@ input[type=text]:placeholder {
   opacity:0;
   -webkit-animation:fadeIn ease-in 1;
   -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  /*! animation:fadeIn ease-in 1; */
 
   -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
@@ -704,10 +704,10 @@ input[type=text]:placeholder {
 }
 /*teble test*/
 
-form-style-9{
-    max-width: 450px;
+.form-style-9{
+    max-width: 900px;
     background: #FAFAFA;
-    padding: 30px;
+    padding: 0px;
     margin: 50px auto;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
@@ -773,6 +773,10 @@ form-style-9{
 .form-style-9 ul li input[type="submit"]:hover {
     background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
     background-color: #28739E;
+}
+
+.active {
+  text-align: right;
 }
 
 
