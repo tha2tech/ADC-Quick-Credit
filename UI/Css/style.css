@@ -2,7 +2,7 @@
 
 body {
   font-family: "jaf-facitweb", "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px;
+  /*! font-size: 20px; */
 }
 
 .logo {
@@ -15,22 +15,24 @@ body {
 .buttons-wrapper {
   float: right;
 }
-
 .global-header{
   background-color: #f8f9f9;
   height: 5em;
   left: 0;
   padding: 1em .75em;
-  position: fixed;
+  position: 9;
   right: 0;
   top: 0;
   z-index: 100;
+ position: fixed;
 }
 
 .global-header.mod-trello-blue {
     background: rgba(0, 121, 191, 0);
+   
     -webkit-transition: background 1s ease 0s;
     transition: background 1s ease 0s
+
 }
 
 /* Colours */
@@ -71,7 +73,7 @@ a.global-header-section-button {
     box-shadow: 0 2px 0 #cdd2d4;
     color: #4d4d4d;
     display: inline-block;
-    font-size: .8em;
+    font-size: .4em;
     line-height: 1.1em;
     margin: 0 .25em;
     padding: .7em 1.3em;
@@ -118,7 +120,7 @@ a.global-header-section-button:active {
 .global-header.mod-dark-background a.global-header-section-button:focus,
 .global-header.mod-dark-background a.global-header-section-button:hover {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.30);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4)
 }
 .global-header.mod-dark-background a.global-header-section-button:active {
@@ -453,8 +455,8 @@ h2 {
   border-radius: 10px 10px 10px 10px;
   background: #fff;
   padding: 0px;
-  width: 90%;
-  max-width: 450px;
+  width: %;
+  max-width: 950px;
   position: relative;
   padding: 0px;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
@@ -541,20 +543,20 @@ input[type=text] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
-  padding: 10px 30px;
+  padding: 15px 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 3px;
-  width: 75%;
+  margin: px;
+  width: 0.5%;
   border: 1px solid #f6f6f6;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 555px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -572,14 +574,14 @@ input[type=text]:placeholder {
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
-.fadeInDown {
+./*fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
+}*/
 
 @-webkit-keyframes fadeInDown {
   0% {
@@ -616,7 +618,7 @@ input[type=text]:placeholder {
   opacity:0;
   -webkit-animation:fadeIn ease-in 1;
   -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  /*! animation:fadeIn ease-in 1; */
 
   -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
@@ -704,10 +706,10 @@ input[type=text]:placeholder {
 }
 /*teble test*/
 
-form-style-9{
-    max-width: 450px;
+.form-style-9{
+    max-width: 900px;
     background: #FAFAFA;
-    padding: 30px;
+    padding: 0px;
     margin: 50px auto;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
@@ -775,7 +777,570 @@ form-style-9{
     background-color: #28739E;
 }
 
+.active {
+  text-align: right;
+}
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#003366;
+   color: white;
+   text-align: center;
+   position: fixed;
+}
+
+.text{
+  background-color:white;
+  font-size: 25;
+  padding: 16px;
+  text-align: center;
+}
+
+/*newone*/
+body {
+    font: 16px/1.5 Arial, Helvetica sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+input {
+    padding: 15px;
+    border:none;
+    border-radius: 3px;
+    background:#f1f1f1;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+textarea {
+    padding: 15px;
+    border:none;
+    border-radius: 3px;
+    background:#f1f1f1;
+    margin-bottom: 10px;
+}
+
+textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    height: 35px;
+    color: #ffffff;
+    background: #132B40;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+}
+
+hr {
+    color: #547CFF;
+    opacity: 0.3;
+}
+
+.shadowed_button:hover {
+    opacity: 0.9;
+}
+
+/* forms */
+.form_wrapper {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px 30px 30px;
+    background: #AAD6FF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form_wrapper input[type='email'],
+.form_wrapper input[type='number'],
+.form_wrapper input[type='text'],
+.form_wrapper input[type='tel'],
+.form_wrapper input[type='password'],
+.form_wrapper textarea
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.form_wrapper h1,
+p.form_message
+{
+    text-align: center;
+}
+
+label {
+    margin-bottom: 5px;
+    margin-top: 20px;    
+    display: block;
+}
+
+/* tables */
+.table_wrapper {
+    overflow-x: auto;
+}
+
+table {
+    background: #e6e6e6;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+}
+
+tr {
+    border-bottom: 1px solid #cccccc;
+}
+
+th {
+    white-space: nowrap;
+    padding: 7px;
+}
+
+td {
+    padding: 5px;
+}
+
+td div {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 70px;
+    background: #547CFF;
+    border-bottom: 3px solid #132B40;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header #brand_name:hover {
+    color: #ffffff;
+}
+
+header a.active {
+    color: #132B40;
+    font-weight: bold;
+}
+
+span.action_span {
+    cursor: pointer;
+}
+
+ul.base_ul {
+    display: flex;
+}
+
+nav.menu {
+    margin-top: 10px;
+}
+
+.micro_image_wrapper img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+}
+
+.nav_div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.menu > ul > li {
+  display:inline-block;
+    position:relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.sub_menu {
+  width: 350%;
+    position: absolute;
+  top: 100%;
+    left: -150px;
+    padding: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity linear 0.15s;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.sub_menu p {
+    color: #3a81bf;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sub_menu a {
+    color: #547CFF;
+}
+
+.menu li:hover .sub_menu {
+  z-index:1;
+  opacity:1;
+}
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    text-align: center;
+    background: url('../img/architecture-bridge-buildings-374685.jpg') no-repeat 0 -500px;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 18px;
+}
+
+#newsletter {
+    color: #ffffff;
+    padding: 15px;
+    background: #547CFF
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 25px;
+}
+
+#newsletter input[type='email'] {
+    width: 250px;
+}
+
+#newsletter button.subscribe_button {
+    height: 44px;
+}
+
+/* Info section */
+#first_info_section {
+    margin-top: 40px;
+}
+
+.info_section {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 30px 20px;
+    background: #AAD6FF;
+}
+
+footer {
+    background: #132B40;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .nav_div {
+        display: block;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav > ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+    }
+
+    .container, .nav_div {
+        width: 95%;
+    }
+    button {
+        margin-top: 5px;
+    }
+    header #branding,
+    #newsletter h1,
+    #newsletter form
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #newsletter input[type='email'] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    form.modal_content {
+        width: 80%;
+    }
+
+    button.cancel_button, button.save_profile_button {
+        width: 100%;
+    }
+
+    div.user_card,
+    div.loan_card
+    {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* loan */
+    div.loan_card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.loan_right_grid {
+        margin: 0;
+        text-align: center;
+    }
+
+    .user_photo,
+    hr.card_divider
+    {
+        display: none;
+    }
+}
+
+/* About */
+.authentication_section,
+.profile_edit,
+.loan_application {
+    padding: 30px 20px;
+}
+
+/* authentication */
+
+#reg_form_toggle {
+    margin-top: 30px;
+    display: grid;
+    max-width: 650px;
+    grid-template-columns: 50% 50%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.authentication_div {
+    background: #AAD6FF;
+    text-align: center;
+    cursor: pointer;
+}
+
+#reg_form_toggle h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.deselected {
+    border-bottom: 1px solid #132B40;
+    background: #9AC1E6;
+    color:#3a81bf;
+    font-size: 14px;
+}
+
+.hide_form {
+    display: none;
+}
+
+.submit_button {
+    width: 100%;
+}
+
+/* Dashboard */
+
+.card {
+    padding: 10px;
+    max-width: 500px;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 1px 3px ghostwhite;
+}
+
+.user_card {
+    margin-right: auto;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 30% 1% 68%;
+}
+
+.user_photo {
+    margin: auto;
+}
+
+.user_photo img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.user_info {
+    margin: auto auto auto 5px;    
+}
+
+.user_address {
+    margin-right: auto;
+}
+
+.admin_actions_buttons {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 0.97;
+    padding-top: 50px;
+    background-color: #474e5d;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.modal_content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.modal_input {
+    width: 100%;
+    display: inline-block;
+}
+
+.cancel_button {
+    background: red;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cancel_button, .save_profile_button {
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+/* Loan */
+.approve {
+    background: #008000;
+}
+
+.reject {
+    background: #ff0000;
+}
+
+.loan_card {
+    display: grid;
+    grid-row-gap: 50px;
+    margin-right: auto;
+    font-weight: bold;
+    grid-template-columns: 30% 1% 68%;
+}
+
+.loan_left_grid {
+    font-size: 28px;
+    text-align: center;
+}
+
+.loan_left_grid p.status {
+    color: green;
+}
+
+.loan_right_grid {
+    margin: auto auto auto 5px;    
+}
 
 
 
