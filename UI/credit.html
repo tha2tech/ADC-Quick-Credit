@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>signin</title>
+  <link rel="stylesheet" href="Css/style.css">
+    <script src="js/script.js"> </script>
+    
+    
+</head>
+<body>
+
+<div class="global-header mod-trello-blue">
+     <div class="logo">Quick Credit Solution</div>
+  
+  <div class="buttons-wrapper">
+    <a href="index.html" class="buttonmenue">Home</a>
+     <a href="admin.html" class="buttonmenue">Clients</a>
+    <a href="about_us.html" class="buttonmenue">About us</a>
+    <a href="#" class="buttonmenue">FAQ</a>
+  </div>
+</div>
+  
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+     <section id="main_loan">
+            <div class="container">
+
+                <!--show the checkmark only if the load has been repaid-->
+                <h2 class="page_heading">Loan | <code>123456789</code> <span style="color:green">&#x2714</span></h2>
+
+                <div class="admin_actions_buttons">
+                    <!--Approve and reject buttons will be visible only if the loan status is pending-->
+                    <button
+                        id="approve_loan_application"
+                        class="button_1 shadowed_button approve"
+                    >
+                        Approve
+                    </button>
+
+                    <button
+                        id="reject_loan_application"
+                        class="button_1 shadowed_button reject"
+                    >
+                        Reject
+                    </button>
+
+                    <!--This button will only be visible for open loans-->
+                    <button
+                        id="post_payment_to_loan"
+                        class="button_1 shadowed_button"
+                        onclick="document.getElementById('loan_payment_modal').style.display='block'"
+                    >
+                        Post payment
+                    </button>
+                </div>
+
+                <div class="loan_card card">
+                    <div class="loan_left_grid">
+                        <p class="amount">500,000</p>
+                        <p class="status">Approved</p>
+                    </div>
+
+                    <hr class="card_divider">
+
+                    <div class="loan_right_grid">
+                        <p class="interest">Interest: 25,000</p>
+                        <p class="tenor">Periode: 12 months</p>
+                        <p class="installments">Installments: 43,750</p>
+                        <p class="balance">Balance: 481,250</p>
+                    </div>
+                </div>
+
+                <div class="user_card card">
+                    <div class="user_photo">
+                        <img src="https://via.placeholder.com/150" alt="">
+                    </div>
+                    <hr class="card_divider">
+
+                    <div class="user_info">
+                        <h3>Thadee <span style="color:green">&#x2714</span></h3>
+                        <p><a href="mailto:email@address.com">bmtha2@gmail.com</a></p>
+                        <p><a href="tel:+250788967221">+250788967221</a></p>
+                    </div>
+                </div>
+
+                <div class="user_address card">
+                    <p> Dear Adimin, you have to check the request of clients if the meet the criteria </p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <div id="loan_payment_modal" class="modal">
+            <span class="close" onclick="document.getElementById('loan_payment_modal').style.display='none'">&times;</span>
+            <form action="" class="modal_content">
+                <div class="container">
+                    <h3>Post payment to loan <code>123456789</code></h3>
+                    <hr>
+                    <label for="payment_amount"><b>Amount</b></label>
+                    <input class="modal_input" type="text" placeholder="Enter payment amount" name="payment_amount" required>
+
+                    <div class="clearfix">
+                        <button
+                            onclick="document.getElementById('loan_payment_modal').style.display='none'"
+                            class="button_1 shadowed_button cancel_button">
+                            Cancel
+                        </button>
+                        <button type="submit" class="button_1 shadowed_button save_profile_button">Post payment</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    
+
+  </div>
+</div>
+
+
+
+<footer class="footer">
+            <p>Quick Credit &copy; 2019</p>
+</footer>
+  
+</body>
+</html>

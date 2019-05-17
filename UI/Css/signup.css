@@ -1,6 +1,17 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
+.global-header{
+  background-color: #f8f9f9;
+  height: 5em;
+  left: 0;
+  padding: 1em .75em;
+  position: 9;
+  right: 0;
+  top: 0;
+  z-index: 100;
+ 
+}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -191,6 +202,17 @@ a.global-header-section-button:active {
   margin: 4px 2px;
   cursor: pointer;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#003366;
+   color: white;
+   text-align: center;
+   position: fixed;
+}
+
 
 
 
